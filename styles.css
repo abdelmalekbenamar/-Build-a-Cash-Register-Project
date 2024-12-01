@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkblue;
+}
+input, button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+button{
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+input{
+    padding: 5px;
+    width: 200px;
+}
+#button{
+    width: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: repeat(3, 20px);
+    gap: 3px;
+    justify-content: center;
+}
+#button div{
+    background-color: white;
+    border-radius: 3px;
+}
+#machineBody{
+    background-color: #99c9ff;
+    width: 325px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+}
+.leTotal{
+    color: white;
+    background-color: black;
+    width: 200px;
+    margin: 30px auto 30px auto;
+    border: 10px solid #99c9ff;
+    position: relative;
+    padding: 6px;
+}
+.leTotal::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background-color: #99c9ff;
+    bottom: -40px;
+}
+#changeInDrawer{
+    background-color: white;
+    padding: 5px;
+}
+#change-due{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+}
